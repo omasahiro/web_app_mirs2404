@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>移動型ウォーターサーバー - タイムテーブル</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="プロジェクトロゴ" class="header-logo">
+        <div class="header-center">
+            <img src="images/AQUA.png" alt="プロジェクト名AQUA" class="header-aqua-logo">
+            <span class="header-text">稼働スケジュール</span>
+        </div>
+    </header>
+    
+    <main>
+        <h2>スケジュール</h2>
+        <p>以下はウォーターサーバーが稼働する日時と場所です。</p>
+        
+        <div class="connection-status">
+            ROSの接続状態: <span id="connection-status">未接続</span>
+        </div>
+        
+        <div class="schedule-container">
+            <table id="schedule-table">
+                <thead>
+                    <tr>
+                        <th>日付</th>
+                        <th>時間</th>
+                        <th>場所（棟）</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- JavaScriptで動的にデータを挿入 -->
+                </tbody>
+            </table>
+        </div>
+        
+        <p class="note">※スケジュールは変更になる場合があります。</p>
+
+        <div class="campus-map">
+            <h3>キャンパスマップ</h3>
+            <div class="map-container">
+                <img src="images/map.png" alt="キャンパスマップ" class="map-image">
+                <div id="robot-marker"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>MIRS2024 AQUAプロジェクト</p>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/roslibjs/1.1.0/roslib.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
