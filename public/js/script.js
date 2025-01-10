@@ -37,8 +37,10 @@ function initializeScheduleTable() {
 
 // ROS接続の初期化
 function initializeROS() {
-    var ros = new ROSLIB.Ros({
-        url : `ws://${window.location.hostname}:9090`
+    console.log('Current hostname:', window.location.hostname);
+    
+   var ros = new ROSLIB.Ros({
+        url: 'wss://ebcb-160-18-100-1.ngrok-free.app'
     });
 
     setupROSCallbacks(ros);
