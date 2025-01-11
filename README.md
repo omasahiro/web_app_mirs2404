@@ -7,8 +7,8 @@ ros2 launch rosbridge_server rosbridge_websocket_launch.xml
 別のターミナルを起動
 
 ```bash
-cd ros2_web_app
-node sercer.js
+cd web_app_mirs2404
+node server.js
 ```
 
 別のターミナルを起動
